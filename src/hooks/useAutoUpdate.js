@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import serviceWorker from "../service-worker";
+import { register } from "../serviceWorkerRegistration";
 
 const useAutoUpdate = () => {
   useEffect(() => {
-    serviceWorker.register({
+    register({
       onUpdate: (worker) => {
         worker.postMessage({ type: "SKIP_WAITING" });
         window.location.reload();
