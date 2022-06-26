@@ -2,10 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import packageJSON from '../package.json';
-import useAutoUpdate from './hooks/useAutoUpdate';
+// import useAutoUpdate from './hooks/useAutoUpdate';
 
 function App() {
-  useAutoUpdate();
+  // useAutoUpdate();
   
   return (
     <div className="App">
