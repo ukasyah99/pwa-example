@@ -2,8 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import packageJSON from '../package.json';
+import useAutoUpdate from './hooks/useAutoUpdate';
 
 function App() {
+  useAutoUpdate();
+  
   return (
     <div className="App">
       <header className="App-header">
