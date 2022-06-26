@@ -12,6 +12,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          Good job!!!
+        </p>
+        <p>
           Version: {packageJSON.version}
         </p>
         {/* <p>
